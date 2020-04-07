@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="XFLabel.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <ScrollView>
+        <StackLayout>
+            <!--<Label FontSize="Large" Text="行の高さ" />
+            <Label Text="Note that a Span can also respond to any gestures that are added to the span's GestureRecognizers collection. For example, a TapGestureRecognizer has been added to the second Span in the above code examples. Therefore, when this Span is tapped the TapGestureRecognizer will respond by executing the ICommand defined by the Command property. For more information about gesture recognizers, see Xamarin.Forms Gestures." />
+            <Label LineHeight="2.0" Text="Note that a Span can also respond to any gestures that are added to the span's GestureRecognizers collection. For example, a TapGestureRecognizer has been added to the second Span in the above code examples. Therefore, when this Span is tapped the TapGestureRecognizer will respond by executing the ICommand defined by the Command property. For more information about gesture recognizers, see Xamarin.Forms Gestures." />
+
+            <Label FontSize="Large" Text="LineBreakMode:文字列の省略,折り返し" />
+            <Label LineBreakMode="HeadTruncation" Text="末尾がちょうど収まるように前方を省略するのがHeadTruncation." />
+            <Label LineBreakMode="TailTruncation" Text="TailTruncationは先頭がちょうど収まるように後方を省略する" />
+            <Label LineBreakMode="MiddleTruncation" Text="先頭と末尾がちょうど収まるように中間を省略するのがMiddleTruncation." />
+
+            <Label
+                LineBreakMode="TailTruncation"
+                MaxLines="2"
+                Text="Note that a Span can also respond to any gestures that are added to the span's GestureRecognizers collection. For example, a TapGestureRecognizer has been added to the second Span in the above code examples. Therefore, when this Span is tapped the TapGestureRecognizer will respond by executing the ICommand defined by the Command property. For more information about gesture recognizers, see Xamarin.Forms Gestures." />
+
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="Large" Text="吾" />
+                        <Span FontSize="Body" Text="輩は猫である.名前はまだない." />
+                        <Span
+                            FontSize="Body"
+                            Text="どこで"
+                            TextColor="Blue"
+                            TextDecorations="Underline" />
+                        <Span FontSize="Body" Text="生まれたか頓と見当がつかぬ." />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>-->
+            <Frame
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                WidthRequest="200">
+                <Label Text="何も指定しない場合は,テキストは折り返される." />
+            </Frame>
+            <Frame
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                WidthRequest="200">
+                <Label LineBreakMode="TailTruncation" Text="Truncationを指定すると,収まらない分は｢...｣で省略される." />
+            </Frame>
+            <Frame
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                WidthRequest="200">
+                <Label LineBreakMode="HeadTruncation" Text="Truncationを指定すると,収まらない分は｢...｣で省略される." />
+            </Frame>
+            <Frame
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                WidthRequest="200">
+                <Label LineBreakMode="MiddleTruncation" Text="Truncationを指定すると,収まらない分は｢...｣で省略される." />
+            </Frame>
+        </StackLayout>
+    </ScrollView>
+
+
+</ContentPage>
